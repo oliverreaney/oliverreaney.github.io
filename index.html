@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>nexi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="styleind.css">
+</head>
+<body>
+    <div class="landing-content">
+        <h1 id="cycleText">Your future begins with nexi. Coming soon.</h1>
+        <h2>All-in-One. Always on. That's <strong>nexi.</strong></h2>
+        <div class="scroll-indicator">↓ scroll to explore</div>
+    </div>
+
+    <section id="features" class="features-section">
+        <h2><strong>The ultimate Discord bot.</strong> Jam-packed with features.</h2>
+        <h3>Nexi is the all-in-one Discord bot, for moderation, music, logging and more, and guess what - it's <strong>free to use.</strong></h3>
+        <h3>Most of the bots you use can easily be replaced by Nexi, making your server look clean, and professional.</h3>
+
+    </section>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-100px";  // Hide
+        } else {
+            navbar.style.top = "0";       // Show
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    </script>
+        
+    
+
+</body>
+</html>
