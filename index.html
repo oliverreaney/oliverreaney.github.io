@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 
+  <script src="/navbar-scroll.js" defer></script>
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -62,17 +63,5 @@
       </ul>
     </footer>
   </div>
-
-  <script>
-    const navbar = document.querySelector(".navbar");
-    let lastScrollTop = 0;
-
-    window.addEventListener("scroll", () => {
-      let scrollTop = window.scrollY || document.documentElement.scrollTop;
-      navbar.style.top = scrollTop > lastScrollTop ? "-100px" : "0";
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
-
-  </script>
 </body>
 </html>
