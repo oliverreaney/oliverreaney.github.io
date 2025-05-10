@@ -1,1 +1,142 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>nexi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <script src="oliverreaney.github.io/script.js" defer></script>
+  <link rel="stylesheet" href="oliverreaney.github.io/style.css" />
+</head>
+<body>
+    <div class="page-container">
+
+        <nav class="navbar">
+        <div class="brand"><a href="oliverreaney.github.io/">nexi</a></div>
+        <div class="nav-links">
+          <a href="/features/">Features</a>
+          <a href="/vacancies/">Vacancies</a>
+        </div>
+      </nav>
+
+        <main class="content">
+            <section id="careers" class="features-section">
+                <h2>Careers at Nexi</h2>
+                <h3>We are in need of people to help within nexi. You will be able to work with a friendly and welcoming team to help make sure operations within nexi are running smoothly.</h3>
+                <h3>Find open positions and applications below.</h3>
+            </section>
+
+             <!-- Form applications need to be put in the href="" section of the a tag in each div class="job-card" -->
+
+            <section class="job-listings">
+                <div class="job-card">
+                    <h3>Bot Developer</h3>
+                    <p>Develop and maintain bots to enhance user experience and automate tasks within nexi.</p>
+                    <a href="" class="apply-link">Apply Now</a>
+                </div>
+                <div class="job-card">
+                    <h3>Web Developer</h3>
+                    <p>Design and develop web applications to support nexi's online presence and functionality.</p>
+                    <a href="" class="apply-link">Apply Now</a>
+                </div>
+                <div class="job-card">
+                    <h3>Customer Service Assistant</h3>
+                    <p>Provide excellent customer support and ensure smooth communication with our users.</p>
+                    <a href="" class="apply-link">Apply Now</a>
+                </div>
+                <div class="job-card">
+                    <h3>Legal Advisor</h3>
+                    <p>Be responsible for documents, contracts, paperwork, companies house etc.</p>
+                    <a href="" class="apply-link">Apply Now</a>
+                </div>
+                <div class="job-card">
+                    <h3>Financial Advisor</h3>
+                    <p>Be responsible for managing billing, payments, funds, etc.</p>
+                    <a href="" class="apply-link">Apply Now</a>
+                </div>
+
+            <section id="mtt" class="features-section">
+                <h2>Meet the development and directorship team.</h2>
+                <h3>Take a look at the people who make up the backbone of Nexi, and help it grow and become successful.</h3>
+                <h3>Find open positions and applications below.</h3>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-photo"><img src="oliverreaney.github.io/icons/ollierean11.webp" alt=""></div>
+                        <h3>OllieRean11</h3>
+                        <p>Managing Director</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo"><img src="oliverreaney.github.io/icons/benathong.webp" alt=""></div>
+                        <h3>BenathonG</h3>
+                        <p>Managing Director</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo"><img src="oliverreaney.github.io/icons/tnsfan4.webp" alt=""></div>
+                        <h3>tnsfan4</h3>
+                        <p>Westgate Executive Director</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo"><img src="oliverreaney.github.io/icons/notomminer.webp" alt=""></div>
+                        <h3>NotOMMiner</h3>
+                        <p>Strategic Operations Executive / Bot Developer</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo"><img src="oliverreaney.github.io/icons/swiftblade112yt.webp" alt=""></div>
+                        <h3>Swiftblade112yt</h3>
+                        <p>Director of Strategic Innovation</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo"><img src="oliverreaney.github.io/icons/martykal.webp" alt=""></div>
+                        <h3>martykal</h3>
+                        <p>Director of Technical Services</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo"><img src="oliverreaney.github.io/icons/humaneclipse.webp" alt=""></div>
+                        <h3>HumanEclipse</h3>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo"><img src="oliverreaney.github.io/icons/justsmall.jpg" alt=""></div>
+                        <h3>justsmall</h3>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+            </section>
+                
+
+
+            </section>
+        </main>
+
+        <footer>
+            <section class="footer-section">
+                <ul class="flist">
+                    <li><a href="https://discord.gg/nexibot">Discord</a></li>
+                    <li><a href="https://www.instagram.com/nexibotuk">Instagram</a></li>
+                    <li><a href="https://x.com/nexibotuk">X</a></li>
+                    <li><a href="https://www.tiktok.com/@nexibotuk">TikTok</a></li>
+                    <li><a href="legal.html">Legal</a></li>
+                </ul>
+            </section>
+        </footer>
+
+    </div>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+            navbar.style.top = scrollTop > lastScrollTop ? "-100px" : "0";
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+</body>
+</html>
