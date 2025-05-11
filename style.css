@@ -135,6 +135,38 @@ footer {
     line-height: 1.4;
 }
 
+/* Thank you */
+.thankyou {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.thankyou h1 {
+    font-size: 2.8rem;
+    color: var(--heading-color);
+    max-width: 90%;
+    line-height: 1.4;
+}
+
+.thankyou h2 {
+    font-size: 1.7rem;
+    color: var(--subheading-color);
+    max-width: 90%;
+    line-height: 1.4;
+}
+
+.thankyou h3 {
+    font-size: 1.3rem;
+    color: var(--feature-text-color);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
 /* Features Section */
 .features-section {
     padding: 100px 20px;
