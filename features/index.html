@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
     <script src="/navscroll.js" defer></script>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
     <script src="/script.js" defer></script>
     <link rel="stylesheet" href="/style.css" />
 </head>
@@ -29,7 +30,12 @@
             <h2>The best features at <strong>the best prices.</strong></h2>
             <h3>Get all features of nexi for just 3.99 GBP/month, with Premium. No hidden fees.</h3>
             <h3>Save over 35% by buying yearly, at 31 GBP/year, or gain lifetime access for a one-time fee of 100 GBP.</h3>
-            <h3 style="padding-top: 1rem; padding-bottom: 1rem;"><strong><a href="">buy nexi premium</a></strong></h3>
+
+            <stripe-pricing-table style="padding-top: 20px;" pricing-table-id="prctbl_1RNL4BKTNpDT6Upy1V0TB2HQ"
+            publishable-key="pk_live_51RNKiaKTNpDT6UpyhJwPkPsqyuVE629dTnGF2AAqmY4diukSYT8NsAAXDaeK396EZZ9XmfUJaNGkm0SzQN8cy6FO00z3bswHxz">
+            </stripe-pricing-table>
+
+            
         </section>
 
         <section id="features" class="features-section">
@@ -80,6 +86,7 @@
                     <li><a href="https://www.instagram.com/nexibotuk">Instagram</a></li>
                     <li><a href="https://x.com/nexibotuk">X</a></li>
                     <li><a href="https://www.tiktok.com/@nexibotuk">TikTok</a></li>
+                    <li><a href="https://billing.stripe.com/p/login/14keYK0nd3sk2SA144">Billing Portal</a></li>
                     <li><a href="/legal/">Legal</a></li>
                 </ul>
             </section>
